@@ -11,8 +11,15 @@
   },
   "dependencies": {
     "@react-three/fiber": "^9.1.1",
+    "@tailwindcss/postcss": "^4.1.1",
+    "@tanstack/react-router": "^1.114.34",
+    "@tanstack/router-plugin": "^1.114.34",
+    "@xyflow/react": "^12.5.4",
+    "postcss": "^8.5.3",
+    "postcss-loader": "^8.1.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
+    "tailwindcss": "^4.1.1",
     "three": "^0.175.0"
   },
   "devDependencies": {
