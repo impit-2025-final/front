@@ -10,11 +10,13 @@
     "preview": "rsbuild preview"
   },
   "dependencies": {
+    "@heroicons/react": "^2.2.0",
     "@react-three/fiber": "^9.1.1",
     "@tailwindcss/postcss": "^4.1.1",
     "@tanstack/react-router": "^1.114.34",
     "@tanstack/router-plugin": "^1.114.34",
     "@xyflow/react": "^12.5.4",
+    "json-to-plantuml": "^0.0.9",
     "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
     "react": "^19.1.0",
