@@ -16,6 +16,7 @@
     "@tanstack/react-router": "^1.114.34",
     "@tanstack/router-plugin": "^1.114.34",
     "@xyflow/react": "^12.5.4",
+    "html-to-image": "^1.11.13",
     "json-to-plantuml": "^0.0.9",
     "postcss": "^8.5.3",
     "postcss-loader": "^8.1.1",
