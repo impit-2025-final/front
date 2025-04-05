@@ -9,6 +9,7 @@ import {
   Controls,
   Panel,
   MarkerType,
+  Marker
 } from '@xyflow/react';
 
 import '@xyflow/react/dist/style.css';
@@ -34,9 +35,16 @@ function RouteComponent() {
       source: '1',
       target: '2',
       animated: true,
-      MarkerEnd: { type: MarkerType.ArrowClosed },
+      markerEnd: { 
+        type: MarkerType.ArrowClosed,
+        color:'#22C55E'
+      },
+      style:{
+        stroke:'#22C55E',
+      }
     },
   ];
+  
   const [nodes, setNodes, onNodesChange] = useNodesState(initialNodes);
   const [edges, setEdges, onEdgesChange] = useEdgesState(initialEdges);
   const nodeTypes = {
@@ -47,8 +55,10 @@ function RouteComponent() {
     (params) => setEdges((eds) => addEdge(params, eds)),
     [setEdges],
   );
+  console.log(edges)
   return (
     <div className="flex flex-row w-full h-screen">
+      
       <div className="flex-1">
         <ReactFlow
           nodes={nodes}
@@ -57,6 +67,7 @@ function RouteComponent() {
           onEdgesChange={onEdgesChange}
           nodeTypes={nodeTypes}
           onConnect={onConnect}
+          style={{ backgroundColor: "#F7F9FB" }}
         >
           <DownloadButton />
           <Background
